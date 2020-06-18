@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         if (mReceiver != null) {
-            LocalBroadcastManager.getInstance(this).unregisterReceiver(mReceiver);
+            unregisterReceiver(mReceiver);
         }
     }
 }
